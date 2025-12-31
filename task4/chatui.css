@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #1f57cf;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: #252525;
+    border-right: 1px solid #333;
+    color: white;
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #333;
+}
+
+.contact {
+    display: flex;
+    padding: 15px;
+    background: #333;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #ff1100;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 0.75rem;
+    color: #3b54e0;
+    display: block;
+}
+
+/* Chat Window */
+.chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px 25px;
+    background: #252525;
+    color: rgb(151, 107, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.header-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-btn:hover {
+    color: #000000;
+}
+
+/* Messages */
+.messages-area {
+    flex: 1;
+    padding: 20px;
+    background: #130101;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.incoming {
+    background: linear-gradient(135deg, #1725e9 0%, #fe4a49 100%);
+    align-self: flex-start;
+    color: white; 
+    border-radius: 15px 15px 15px 2px;
+    box-shadow: 0 4px 10px rgba(199, 49, 49, 0.2);
+}
+
+.outgoing {
+    background: #ff0000;
+    align-self: flex-end;
+}
+
+.time {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 4px;
+    opacity: 0.5;
+    text-align: right;
+}
+
+/* Input Area (Clean version) */
+.input-area {
+    padding: 20px;
+    background: #252525;
+}
+
+.input-area input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #1f1717;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: #444; }
